@@ -50,7 +50,7 @@ namespace DynamicProgramming
 
         /*
             Time: O(n)
-            Space: O(n)
+            Space: O(1)
 
             Time: Using previous value which was calculated, from 0 to n
             Space: Does not store unused values, which leads to static time complexity
