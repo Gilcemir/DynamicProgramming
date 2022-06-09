@@ -78,5 +78,9 @@
         answer = answer * (n - k + i)/i
     
     return answer;
+
+    PS.: Important note: dont use operator *= above, because the division operator can misscalculate a value, for example
+
+    imagine that (n - k + i)/i = 3/2, which will return 1, and its not right. If you multiply before, you can avoid that kind of error.
     
     
