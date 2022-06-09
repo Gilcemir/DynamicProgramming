@@ -1,7 +1,10 @@
+using System.Numerics;
 namespace DynamicProgramming
 {
     public class GridTraveler
     {
+
+        //brute force
         public static long BruteForce(int m, int n)
         {
             if (n == 1 && m == 1)
@@ -12,7 +15,7 @@ namespace DynamicProgramming
             return BruteForce(m - 1, n) + BruteForce(m, n - 1);
         }
 
-
+        //memoized solution
         public static long Memo(int m, int n) => SolveMemo(m, n, new Dictionary<string, long>());
         
         
@@ -30,5 +33,21 @@ namespace DynamicProgramming
             return memo[key];
         }
 
+        public static long Combinatorial(int m, int n)
+        {
+            int r = m - 1;
+            int d = n - 1;
+            int lenght = r + d;
+
+            return Binomial(lenght, d);
+        }
+        private static long Binomial(int n, int k){
+            long ans = 1;
+
+            for(int i = 1; i <= k; i++)
+                ans = ans *(n - k + i)/i; 
+
+            return ans;
+        }
     }
 }

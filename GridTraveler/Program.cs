@@ -1,4 +1,5 @@
 ﻿using DynamicProgramming;
+using System.Numerics;
 using System.Diagnostics;
 /*
 Description:
@@ -16,13 +17,13 @@ int[][] testCases = new int[5][]
     new int[]{2,3},
     new int[]{3,2},
     new int[]{3,3},
-    new int[]{18,18}
+    new int[]{21,21}
 };
 
 foreach(var testCase in testCases)
 {
     stopwatch.Start();
-    long ans = GridTraveler.Memo(testCase[0], testCase[1]);
+    long ans = GridTraveler.Combinatorial(testCase[0], testCase[1]);
     stopwatch.Stop();
     Console.WriteLine($"m = {testCase[0]}, n = {testCase[1]} = {ans}");
     Console.WriteLine($"Elapsed time is  {stopwatch.ElapsedMilliseconds} ms");
