@@ -28,7 +28,7 @@
 
     For a grid with m columns and n rows we know that we will move m - 1 times to the right and n -1 times downwards.
 
->PS.: notice that this problem is slightly diferent from [Lattice paths](https://projecteuler.net/problem=15) because the initial spot is kind of outside the grid, so the number of moves, right and downwards, will be m and n, respectively.
+PS.: notice that this problem is slightly diferent from [Lattice paths](https://projecteuler.net/problem=15) because the initial spot is kind of outside the grid, so the number of moves, right and downwards, will be m and n, respectively.
 
     r = m - 1,
     d = n - 1.
@@ -82,5 +82,15 @@
     PS.: Important note: dont use operator *= above, because the division operator can misscalculate a value, for example
 
     imagine that (n - k + i)/i = 3/2, which will return 1, and its not right. If you multiply before, you can avoid that kind of error.
+---
+
+    Time O(m)
+    Space O(1) 
+
+    Time: since we will only iterate through 1 to m, the time complexity will be O(m). If your testcases have a lot of decompensation (m = 1, n = 100) you can easily change the code to iterate through the smaller value because of the binomial property :
+    for m + n = length,
+    Binomial(length, m) = Binomial(length, n).
+
+    Space: Constant space. Trivial to understand.
     
     
