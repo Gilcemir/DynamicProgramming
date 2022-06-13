@@ -12,7 +12,6 @@
     Space: O(m) 
 
     Time: n-ary tree of height of m and n as possible number of children.
-    n = m + n; 
                 
     Space is the maximum height of the tree, because its the length of the recursive stack in the memory.
 
