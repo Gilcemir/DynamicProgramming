@@ -28,7 +28,7 @@ In how many ways can you travel to the goal on a grid with dimensions m * n?
 ## <center> CanSum </center>
 ### Description:
 Write a function "CanSum(target, numbers[])" that takes in a target Sum and an array of number of arguments.
-The function should return a boolean indicating wheter or not it is possible to generate the target Sum using numbers from the array.
+The function should return a boolean indicating whether or not it is possible to generate the target Sum using numbers from the array.
 You may use element of the array as many times as needed.
 You may assume that all input numbers are non-negative
 
