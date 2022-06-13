@@ -20,7 +20,7 @@
 
     Space: for each x, where 0 <= x <= n fib(x) is stored in the memory, which leads to n length
 
-## <center> Memoized 1 </center>
+## <center> Memoized 2 </center>
 ----
     Time: O(n)
     Space: O(1)
