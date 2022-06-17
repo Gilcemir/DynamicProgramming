@@ -28,3 +28,12 @@
     Time: Using previous value which was calculated, from 0 to n
 
     Space: Does not store unused values, which leads to constant time complexity
+
+## <center> Matrix Solution </center>
+----
+    Time: O(Log(n))
+    Space: O(Log(n))
+
+    Time: Time complexity will be the height of the binary tree generated
+
+    Space: Maximum space in the memory will be the height of the tree

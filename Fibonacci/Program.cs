@@ -10,11 +10,20 @@ Stopwatch stopwatch = new Stopwatch();
 foreach(int item in testCases)
 {
     stopwatch.Start();
-    //long fib = Fibonacci.BruteForceFib(item);
-    //long fib = Fibonacci.MemoFib(item);
-    BigInteger fib = Fibonacci.LogN(item);
+    BigInteger fib = Fibonacci.Memo2(item);
     Console.WriteLine($"n = {item}, fib({item}) = {fib}");
     Console.WriteLine($"Elapsed time is {stopwatch.ElapsedMilliseconds} ms");
     stopwatch.Stop();
 }
 
+Console.WriteLine("Press any key to continue with Matrix solution:");
+Console.ReadLine();
+stopwatch.Reset();
+foreach(int item in testCases)
+{
+    stopwatch.Start();
+    BigInteger fib = Fibonacci.LogN(item);
+    Console.WriteLine($"n = {item}, fib({item}) = {fib}");
+    Console.WriteLine($"Elapsed time is {stopwatch.ElapsedMilliseconds} ms");
+    stopwatch.Stop();
+}
