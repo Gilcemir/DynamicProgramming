@@ -1,6 +1,6 @@
 # <center> Dynamic Programming </center>
 
-#### Implementation of some classical problems presented in the freeCodeCamp Video Course [Dynamic Programming](https://www.youtube.com/watch?v=oBt53YbR9Kk)
+#### Implementation of some classical problems presented by freeCodeCamp Video Course [Dynamic Programming](https://www.youtube.com/watch?v=oBt53YbR9Kk)
 ----
 
 ## <center> Fibonacci </center>
