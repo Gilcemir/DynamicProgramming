@@ -37,8 +37,16 @@ You may assume that all input numbers are non-negative
 ## <center> HowSum </center>
 ### Description:
 Write a function "HowSum(target, numbers[])" that takes in a target Sum and an array of number of arguments.
-The function should return an array containing any combination of elements that add up to exactly the targetSum. If there is no combination thats add up to the targetSum, then return null.
+The function should return an array containing any combination of elements that add up to exactly the targetSum. If there is no combination thats add up to the target, then return null.
 
 If there are multiple combinations possible, you may return any single one.
+
+    List<int> f(target, nums[])
+
+## <center> BestSum </center>
+### Description:
+Write a function "BestSum(target, numbers[])" that takes in a target Sum and an array of number of arguments.
+The function should return an array containing the shortest combination of numbers that add up to exactly target. If there is a tie for the shortest combination, you may return any one of the shortest.
+
 
     List<int> f(target, nums[])
