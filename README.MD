@@ -41,4 +41,4 @@ The function should return an array containing any combination of elements that 
 
 If there are multiple combinations possible, you may return any single one.
 
-    List<List<int>> f(target, nums[])
+    List<int> f(target, nums[])
