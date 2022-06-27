@@ -29,4 +29,4 @@
     m possible values for the nodes;
     for each x , where 1 <= x <= m, we have n possibilities.
     
-    Space: m keys that can have m length.
+    Space: m keys that can have a list of m length.
