@@ -1,9 +1,9 @@
 ﻿using DynamicProgramming;
 
-var testCase1 = HowSum.BruteForce(7, new int[] { 2, 3 });
-var testCase2 = HowSum.BruteForce(7, new int[] { 5, 3, 4, 7 });
-var testCase3 = HowSum.BruteForce(7, new int[] { 2, 4 });
-var testCase4 = HowSum.BruteForce(300, new int[]{7, 14});
+var testCase1 = HowSum.Memo(7, new int[] { 2, 3 });
+var testCase2 = HowSum.Memo(7, new int[] { 5, 3, 4, 7 });
+var testCase3 = HowSum.Memo(7, new int[] { 2, 4 });
+var testCase4 = HowSum.Memo(300, new int[]{7, 14});
 
 List<List<int>> tests = new List<List<int>>();
 tests.Add(testCase1);
@@ -17,7 +17,7 @@ foreach (var testCase in tests)
     if (testCase == null)
     {
         Console.WriteLine("Not found sum");
-        break;
+        continue;
     }
     foreach (int num in testCase)
         Console.Write(num + " ");
