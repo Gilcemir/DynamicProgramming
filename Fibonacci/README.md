@@ -3,7 +3,7 @@
 ## <center> Brute force </center>
 ----
 
-    Time O(n^2)
+    Time O(2ⁿ)
     Space O(n) 
 
     Time: Binary tree of height of n. 
