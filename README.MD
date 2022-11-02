@@ -1,6 +1,6 @@
 # <center> Dynamic Programming </center>
 
-#### Implementation of some classical problems presented by freeCodeCamp Video Course [Dynamic Programming](https://www.youtube.com/watch?v=oBt53YbR9Kk)
+ Implementation of some classical problems presented by freeCodeCamp Video Course [Dynamic Programming](https://www.youtube.com/watch?v=oBt53YbR9Kk)
 ----
 
 ## <center> Fibonacci </center>
@@ -54,6 +54,22 @@ The function should return an array containing the shortest combination of numbe
 ## <center> CanConstruct </center>
 ### Description:
 Write a function "canConstruct(target, wordBank)" that accepts a target string ands an array of strings.
-The function should return a boolean indicating wheter or not the target can be constructed by concatenating elements of the wordBank array. You may reuse elements of wordBank as many time as needed.
+The function should return a boolean indicating whether or not the target can be constructed by concatenating elements of the wordBank array. You may reuse elements of wordBank as many time as needed.
 
     bool f(target, wordBank[])
+
+## <center> CountConstruct </center>
+### Description:
+Write a function "countConstruct(target, wordBank)" that accepts a target string ands an array of strings.
+The function should return the number of ways that the target can be constructed by concatenating elements of the wordBank array. You may reuse elements of wordBank as many time as needed.
+
+    int f(target, wordBank[])
+
+## <center> AllConstruct </center>
+### Description:
+Write a function "allConstruct(target, wordBank)" that accepts a target string ands an array of strings.
+The function should return  a 2d array containing all the ways that the target can be constructed by concatenating elements of the wordBank array.
+Each element of the 2D array should represent one combination that constructs target.
+You may reuse elements of wordBank as many time as needed.
+
+    List<List<string>> f(target, wordBank[])
