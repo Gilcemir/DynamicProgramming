@@ -37,9 +37,9 @@ namespace DynamicProgramming
         {
             int r = m - 1;
             int d = n - 1;
-            int lenght = r + d;
+            int length = r + d;
 
-            return Binomial(lenght, d);
+            return Binomial(length, d);
         }
         private static long Binomial(int n, int k){
             long ans = 1;
