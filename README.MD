@@ -50,3 +50,10 @@ The function should return an array containing the shortest combination of numbe
 
 
     List<int> f(target, nums[])
+
+## <center> CanConstruct </center>
+### Description:
+Write a function "canConstruct(target, wordBank)" that accepts a target string ands an array of strings.
+The function should return a boolean indicating wheter or not the target can be constructed by concatenating elements of the wordBank array. You may reuse elements of wordBank as many time as needed.
+
+    bool f(target, wordBank[])
